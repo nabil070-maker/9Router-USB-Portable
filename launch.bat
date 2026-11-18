@@ -29,5 +29,5 @@ if exist "%ROOT%\data\initial-password.txt" set /p INITIAL_PASSWORD=<"%ROOT%\dat
 node "%ROOT%\scripts\sqlite-guard.js"
 
 echo 9Router: http://localhost:20128   (password: %INITIAL_PASSWORD%)
-call "%ROOT%\app\npm\9router.cmd" --no-browser --host 127.0.0.1
+call "%ROOT%\app\npm\9router.cmd" --no-browser --host 127.0.0.1 --port 69696
 pause
